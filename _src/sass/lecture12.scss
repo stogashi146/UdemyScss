@@ -1,0 +1,13 @@
+ul {
+  li {
+    + li {
+      border-bottom: 1px solid #666;
+    }
+    ~ li {
+      color: #f00;
+    }
+    > li {
+      background-color: #ccc;
+    }
+  }
+}
