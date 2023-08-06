@@ -1,0 +1,11 @@
+// @import "./style1", "./style2";
+@import "./common";
+
+// ネストインポート
+#contents {
+  @import "./common";
+}
+
+#localID {
+  @import "local";
+}
