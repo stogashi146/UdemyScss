@@ -1,0 +1,22 @@
+@use "sass:math";
+$calcWidth: 1000px;
+
+.calc1 {
+  width: $calcWidth + 500px + 8px;
+}
+
+.calc2 {
+  width: 500px - 8px;
+}
+
+.calc3 {
+  width: 500px * 8;
+}
+
+.calc4 {
+  width: math.div(500px, 8);
+}
+
+.calc5 {
+  width: 500px % 8;
+}
