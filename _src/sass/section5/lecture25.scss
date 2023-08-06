@@ -1,0 +1,32 @@
+// mixin
+// オブジェクトを定義できる。関数のようなもの
+// ブロックのスコープは変数と同じ
+@mixin roundBox {
+  border-radius: 10px;
+  background: #ededed;
+  border: 1px solid #666;
+}
+
+.sideArea {
+  @include roundBox;
+}
+
+.bottomArea {
+  @include roundBox();
+}
+
+@mixin _box {
+}
+@mixin -box {
+}
+@mixin ミックスイン {
+}
+
+.main {
+  @mixin mainBox {
+    margin-bottom: 20px;
+  }
+  .contents {
+    @include mainBox();
+  }
+}

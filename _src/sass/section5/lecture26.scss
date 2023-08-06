@@ -1,0 +1,15 @@
+// mixinは引数を受け取ることができる
+// 引数はデフォルㇳ値も可能
+@mixin paddingBox($value: 30px) {
+  padding: $value;
+  margin-bottom: $value * 2;
+}
+
+#main {
+  .mainBox {
+    @include paddingBox(10px);
+  }
+  .mainBox {
+    @include paddingBox();
+  }
+}

@@ -1,0 +1,7 @@
+// インターポレーション
+$IMG_PATH: "../img/";
+$SELECTOR: ".box .item";
+
+#{$SELECTOR} {
+  background-image: url(#{$IMG_PATH}bg.png);
+}
